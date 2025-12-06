@@ -32,17 +32,17 @@ pip install yfinance numpy matplotlib scikit-learn tensorflow
 The model was evaluated using **RMSE** (Root Mean Squared Error) and **MAPE** (Mean Absolute Percentage Error).
 
 * **Bitcoin (BTC):**
-    * **MAPE:** `10.68%`
-    * *Analysis:* The model is relatively accurate for Bitcoin. An error of ~10% is acceptable for a highly volatile asset like crypto, but it is clearly not perfect for precise trading.
+    * **MAPE:** `12.28%`
+    * *Analysis:* The model is relatively accurate for Bitcoin. An error of ~12% can be acceptable for a highly volatile asset like crypto, but it is clearly not perfect for precise trading.
 * **Ethereum (ETH):**
-    * **MAPE:** `19.88%`
-    * *Analysis:* The model struggles more with Ethereum. The error is almost double the BTC error. This suggests ETH is harder to predict or follows different patterns than BTC.
+    * **MAPE:** `29.12%`
+    * *Analysis:* The model struggles more with Ethereum. The error is more than the double of the BTC error. This suggests ETH is harder to predict or follows different patterns than BTC.
 
 ### 2. Visual Analysis (Graphs)
 
 **General Observation:**
-![BTC Prediction Graph](images/btc_prediction.png)
-![ETH Prediction Graph](images/eth_prediction.png)
+![BTC Prediction Graph](btc_prediction.png)
+![ETH Prediction Graph](eth_prediction.png)
 The Predicted line (orange) successfully follows the general **trend** of the Real line (blue). When the market crashes or rallies, the model understands the direction.
 
 **Issues:**
